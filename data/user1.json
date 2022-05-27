@@ -1,0 +1,12 @@
+[
+    {
+        "sourceWord": "north",
+        "correctCounter": 2,
+        "wrongCounter": 1
+    },
+    {
+        "sourceWord": "maximum",
+        "correctCounter": 6,
+        "wrongCounter": 0
+    }
+]
