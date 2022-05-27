@@ -8,13 +8,13 @@ const PORT = 5678;
 app.use(express.json());
 app.use('/api/auth', authCtrl);
 
-app.use(function (req, res,next) {
+app.use(function (req, res, next) {
     try {
         const [type, token] = req.headers.authorization.split(' ');
-        const isCorrect = jwt.verify(token, "myKey");
+        const isCorrect = jwt.verify(token, "f40c189314dafd35aab9d71a29ee32cc");
         next();
     }
-    catch(ex) {
+    catch (ex) {
         res.status(401).send();
     }
 })
